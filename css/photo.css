@@ -6,7 +6,7 @@
 a,
 a:focus,
 a:hover {
-  color: #fff;
+  color: rgb(97, 91, 91);
 }
 
 /* Custom default button */
@@ -28,14 +28,51 @@ html,
 body {
   height: 100%;
   background-color: #333;
+  padding: 0%;
+  margin: 0%;
 }
 
+
 body {
+  margin: 0%;
   display: -ms-flexbox;
   display: flex;
   color: #fff;
   text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
   box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+}
+
+.background {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.image {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 100%;
+  will-change: transform;
+  animation-duration: 20s;
+  animation-name: background-image-animation;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  transform: translateX(0) scale(1.1);
+  background: url('https://www.platinumpublishing.co.uk/uploads/magazines/platinum-business/44/Madrid-2.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+@keyframes background-image-animation {
+  0% {
+    transform: translateX(-5%) scale(1.1);
+  }
+  100% {
+    transform: translateX(5%) scale(1.1);
+  }
 }
 
 .cover-container {
@@ -46,6 +83,7 @@ body {
 /*
  * Header
  */
+ 
 .masthead {
   margin-bottom: 2rem;
 }
@@ -85,6 +123,16 @@ body {
   }
 }
 
+/*main*/
+
+.cover-heading{
+  font-size: 65px;
+  padding: 50px 0 25px 0;
+  
+}
+.text {
+  font-size: 25px;
+}
 
 /*
  * Cover
@@ -101,6 +149,13 @@ body {
 /*
  * Footer
  */
-.mastfoot {
-  color: rgba(255, 255, 255, .5);
+.mastfoot  {
+  color: rgba(36, 34, 34, 0.5);
+  font-weight: bold;
 }
+
+.lead{
+  color: rgb(46, 44, 44);
+  padding: 55px 0 0 0;
+}
+
