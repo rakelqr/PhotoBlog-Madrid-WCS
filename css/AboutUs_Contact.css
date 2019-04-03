@@ -1,0 +1,48 @@
+
+body {
+    background: #a3a7ae;  }
+
+/* ABOUT US*/
+h2 {
+    padding: 20px;
+}
+
+.featurette-heading {
+    padding: 25px;
+    margin: 5px;  }
+
+.text-muted {
+    color: white;
+}    
+
+.lead {
+    padding: 20px 20px 20px 40px;
+    text-align: justify;  }
+
+.col-md-4 {
+    padding: 15px;  
+    display: block;  }
+
+.col-md-8 {
+    text-align: right;
+}
+
+/* CONTACT */
+
+form {
+    padding: 70px 15px 20px;  }
+
+.form-group {
+    padding: 10px;  }
+
+.form-control { 
+    font-size: 12px;
+}
+.col-md-5 {
+    padding: 150px 15px 20px 35px; 
+}
+
+footer {
+    margin: 15px;
+}
+
