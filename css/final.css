@@ -1,6 +1,12 @@
 /* GLOBAL */
 
 /* Links */
+html {
+    height: 100%;
+    padding: none;
+    margin: none;
+}
+
 a,
 a:focus,
 a:hover {
@@ -16,12 +22,9 @@ a:hover {
     border: .05rem solid #fff;  }
 
 body {
-    height: 100%;
     background-color: #fff;
     width: 100%;
-    height: 100%;
     margin: 0%;
-    padding: 0%;
     color: #333;  
     box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);  }
 
@@ -70,9 +73,6 @@ nav {
     display: block;
     color: rgb(97, 91, 91);  }
 
-.masthead {
-    margin-bottom: 2rem;  }
-  
 .masthead-brand {
     margin-bottom: 0;  }
 
@@ -93,7 +93,9 @@ nav {
 /* Diferente. Este es el de about */  
 .nav-masthead .active {
     color: rgb(97, 91, 91);
-    border-bottom-color: #fff;  }
+    border-bottom-color: rgb(206, 202, 202);
+    border-radius: 5%;
+    }
   
 @media (min-width: 48em) {
     .masthead-brand {
@@ -224,4 +226,10 @@ form {
 
 .col-md-5 {
     padding: 205px 15px 20px 35px;  }
+
+    /* CONTACT */
+.footer {
+    text-align: center;
+    margin: 20px;
+}
 
